@@ -1,4 +1,4 @@
-const BASE = "http://localhost:5000";
+const BASE = "https://authenticate-2i3j.onrender.com";
 
 let token = null;
 
