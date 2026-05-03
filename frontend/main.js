@@ -1,9 +1,11 @@
 import AuthSDK from "./sdk/index.js";
 
+const clientId = localStorage.getItem("clientId");
+
 const auth = new AuthSDK({
-    baseURL: "http://localhost:5000",
-    clientId: "35458b9e1828c3d9a0823d2d01899b15",
-  });
+  baseURL: "https://authenticate-2i3j.onrender.com/",
+  clientId,
+});
 
 // get elements
 const emailInput = document.getElementById("email");
