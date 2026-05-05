@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Auth Test</title>
+  <title>Auth App</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h2>Auth Test</h2>
 
-  <input id="email" placeholder="Email" />
-  <input id="password" placeholder="Password" type="password" />
+<div class="container">
 
-  <button id="signupBtn">Signup</button>
-  <button id="loginBtn">Login</button>
-  <button id="getUserBtn">Get User</button>
+  <div class="card">
+    <h2>Create Account</h2>
+    <auth-signup></auth-signup>
+  </div>
 
-  <script type="module" src="main.js"></script>
+  <div class="card">
+    <h2>Login</h2>
+    <auth-signin></auth-signin>
+  </div>
+
+</div>
+
+<script type="module" src="./ui/auth-ui.js"></script>
+
 </body>
 </html>
